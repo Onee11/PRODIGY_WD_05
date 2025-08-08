@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast | Dynamic Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="sunny">
+    <div class="container">
+        <h1><i class="fas fa-cloud-sun"></i> Weather Forecast</h1>
+        
+        <div class="search-container">
+            <input type="text" id="locationInput" placeholder="Enter a city name...">
+            <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner"></i> Loading weather data...
+        </div>
+        
+        <div class="weather-display" id="weatherData">
+            <div class="weather-icon">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="temperature">24°C</div>
+            <div class="location">New York, US</div>
+            <div class="description">Sunny</div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-value humidity">65%</div>
+                    <div class="detail-label">Humidity</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-value wind">12 km/h</div>
+                    <div class="detail-label">Wind</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-value pressure">1013 hPa</div>
+                    <div class="detail-label">Pressure</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="suggestions">
+            <h2><i class="fas fa-city"></i> Popular Cities</h2>
+            <div class="city-list">
+                <button class="city-btn" data-city="New York">New York</button>
+                <button class="city-btn" data-city="London">London</button>
+                <button class="city-btn" data-city="Tokyo">Tokyo</button>
+                <button class="city-btn" data-city="Paris">Paris</button>
+                <button class="city-btn" data-city="Sydney">Sydney</button>
+                <button class="city-btn" data-city="Dubai">Dubai</button>
+                <button class="city-btn" data-city="Rio de Janeiro">Rio</button>
+                <button class="city-btn" data-city="Cairo">Cairo</button>
+            </div>
+        </div>
+        
+        <div class="error-message" id="errorMessage">
+            City not found. Please try another location.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
