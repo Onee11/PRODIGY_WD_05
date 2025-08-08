@@ -1,9 +1,9 @@
 
 
 const API_KEYS = {
-    openWeatherMap: '4a48e1e1428fd83889074671fbf259d9', // OpenWeatherMap
-    weatherApi: 'YOUR_WEATHERAPI_KEY', // WeatherAPI.com
-    tomorrowIo: 'YOUR_TOMORROW_IO_KEY' // Tomorrow.io
+    openWeatherMap: 'Use_YOUR_WEATHERAPI_KEY', // OpenWeatherMap
+    weatherApi: 'Use_YOUR_WEATHERAPI_KEY', // WeatherAPI.com
+    tomorrowIo: 'Use_YOUR_TOMORROW_IO_KEY' // Tomorrow.io
 };
 
 // For this demo, we'll use OpenWeatherMap
